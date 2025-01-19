@@ -2,13 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package lampadina;
+package lampadina_immagine;
+
+import lampadina.*;
 
 /**
  *
  * @author mdt
  */
-public class Corso_java {
+public class Main {
 // Classe principale per avviare l'applicazione
 
     public static void main(String[] args) {
