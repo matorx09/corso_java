@@ -50,7 +50,7 @@ public class LampadinaView {
 
     public void setImmagine(String stato) {
         // Cambia l'immagine in base allo stato
-        String path = "lampadina_" + stato + ".png"; // Modifica con il percorso corretto
+        String path = "src/lampadina_immagine/files/lampadina_" + stato + ".png"; // Modifica con il percorso corretto
         ImageIcon icon = new ImageIcon(path);
                 
         // Ridimensiona l'immagine per adattarla al pannello

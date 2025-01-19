@@ -1,0 +1,42 @@
+Classi e loro relazioni:
+StatoLampadina (enum):
+
+Rappresenta gli stati possibili della lampadina: ACCESA, SPENTA, ROTTA.
+Lampadina (Modello):
+
+Campi:
+stato: StatoLampadina
+Metodi:
+Lampadina(): Inizializza la lampadina in stato SPENTA.
+getStato(): Ritorna lo stato corrente della lampadina.
+accendi(): Cambia lo stato in ACCESA (se non è rotta).
+spegni(): Cambia lo stato in SPENTA (se non è rotta).
+rompi(): Cambia lo stato in ROTTA.
+LampadinaView (Vista):
+
+Campi:
+frame: JFrame
+accendiButton: JButton
+spegniButton: JButton
+statoLabel: JLabel
+immagineLabel: JLabel
+Metodi:
+LampadinaView(): Configura la finestra e i componenti grafici.
+setStatoLabel(String): Aggiorna il testo dello stato.
+setImmagine(String): Aggiorna l'immagine in base allo stato.
+getAccendiButton(): Ritorna il bottone per accendere.
+getSpegniButton(): Ritorna il bottone per spegnere.
+show(): Mostra la finestra.
+LampadinaController (Controller):
+
+Campi:
+lampadina: Lampadina
+view: LampadinaView
+Metodi:
+LampadinaController(Lampadina, LampadinaView): Collega il modello e la vista, aggiunge i listener ai bottoni.
+aggiornaVista(): Sincronizza il modello e la vista.
+Main:
+
+Metodo:
+main(String[]): Inizializza il modello, la vista, e il controller.
+
